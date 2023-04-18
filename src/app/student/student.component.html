@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h5>
+        {{ student.name }}
+      </h5>
+      <hr />
+      <p>
+        This student is a <u>{{ student.level }}</u>
+      </p>
+      <div class="form-group">
+        <label for="new-level">To change level, select:</label>
+        <select
+          class="form-control mt-2"
+          id="new-level"
+          #level
+          (change)="updateLevelTo(level.value)"
+        >
+          <option value="freshman">Freshman</option>
+          <option value="sophomore">Sophomore</option>
+          <option value="junior">Junior</option>
+          <option value="senior">Senior</option>
+          <option value="graduate">Graduate</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>

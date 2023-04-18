@@ -1,0 +1,10 @@
+<div class="container">
+  <app-new-student (newStudentAdded)="onStudentAdded($event)"></app-new-student>
+  <hr />
+  <app-student
+    *ngFor="let std of students; let i = index"
+    [student]="std"
+    [id]="i"
+    (levelChanged)="onLevelChanged($event)"
+  ></app-student>
+</div>
