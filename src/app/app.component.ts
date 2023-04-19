@@ -8,12 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   students = [
     {
-      name: 'Bob',
-      year: 'senior',
-    },
-    {
       name: 'Amy',
-      year: 'freshman',
+      year: 'senior',
     },
     {
       name: 'Deion',
