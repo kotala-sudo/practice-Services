@@ -14,7 +14,9 @@ export class NewStudentComponent implements OnInit {
       name: studentName,
       year: studentYear,
     });
-    console.log(`A level change occured, the new level is ${studentYear}`);
+    console.log(
+      `Student's year change occured, the new year is ${studentYear}`
+    );
   }
 
   constructor() {}

@@ -13,7 +13,7 @@ export class StudentComponent implements OnInit {
 
   updateYearTo(year: string) {
     this.yearChanged.emit({ id: this.id, newYear: year });
-    console.log(`A status change occured, the new status is ${year}`);
+    console.log(`Student's year change occured, the new value is ${year}`);
   }
   constructor() {}
 
