@@ -6,15 +6,15 @@
       </h5>
       <hr />
       <p>
-        This student is a <u>{{ student.level }}</u>
+        This student is a <u>{{ student.year }}</u>
       </p>
       <div class="form-group">
-        <label for="new-level">To change level, select:</label>
+        <label for="new-year">To change year, select:</label>
         <select
           class="form-control mt-2"
-          id="new-level"
-          #level
-          (change)="updateLevelTo(level.value)"
+          id="new-year"
+          #year
+          (change)="updateYearTo(year.value)"
         >
           <option value="freshman">Freshman</option>
           <option value="sophomore">Sophomore</option>

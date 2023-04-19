@@ -6,15 +6,15 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./new-student.component.css'],
 })
 export class NewStudentComponent implements OnInit {
-  @Output() newStudentAdded: EventEmitter<{ name: string; level: string }> =
-    new EventEmitter<{ name: string; level: string }>();
+  @Output() newStudentAdded: EventEmitter<{ name: string; year: string }> =
+    new EventEmitter<{ name: string; year: string }>();
 
-  onCreateStudent(studentName: string, studentLevel: string) {
+  onCreateStudent(studentName: string, studentYear: string) {
     this.newStudentAdded.emit({
       name: studentName,
-      level: studentLevel,
+      year: studentYear,
     });
-    console.log(`A level change occured, the new level is ${studentLevel}`);
+    console.log(`A level change occured, the new level is ${studentYear}`);
   }
 
   constructor() {}

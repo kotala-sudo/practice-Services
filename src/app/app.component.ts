@@ -9,23 +9,23 @@ export class AppComponent {
   students = [
     {
       name: 'Bob',
-      level: 'senior',
+      year: 'senior',
     },
     {
       name: 'Amy',
-      level: 'freshman',
+      year: 'freshman',
     },
     {
       name: 'Deion',
-      level: 'junior',
+      year: 'junior',
     },
   ];
 
-  onStudentAdded(newStudent: { name: string; level: string }) {
+  onStudentAdded(newStudent: { name: string; year: string }) {
     this.students.push(newStudent);
   }
 
-  onLevelChanged(updateInfo: { id: number; newLevel: string }) {
-    this.students[updateInfo.id].level = updateInfo.newLevel;
+  onYearChanged(updateInfo: { id: number; newYear: string }) {
+    this.students[updateInfo.id].year = updateInfo.newYear;
   }
 }
